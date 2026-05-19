@@ -428,6 +428,12 @@ if __name__ == "__main__":
 import os
 
 if __name__ == "__main__":
-    # Render ka port lega, nahi toh local me 5000 par chalega
-    port = int(os.environ.get("PORT", 5000))
-    app.run(host="0.0.0.0", port=port)    
+    import uvicorn
+    import os
+    port = int(os.environ.get("PORT", 8000))
+    uvicorn.run(
+        app,
+        host="0.0.0.0",
+        port=port,
+        log_level="info"
+    )
