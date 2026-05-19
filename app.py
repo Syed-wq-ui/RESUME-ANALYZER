@@ -424,3 +424,10 @@ if __name__ == "__main__":
         port=8000,
         log_level="info"
     )
+    
+import os
+
+if __name__ == "__main__":
+    # Render ka port lega, nahi toh local me 5000 par chalega
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)    
