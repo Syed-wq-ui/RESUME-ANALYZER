@@ -12,5 +12,4 @@ langchain-pinecone==0.0.1
 typing-extensions==4.12.2
 pinecone-client==3.2.2
 sentence-transformers==3.0.1
-torch==2.3.0+cpu
 streamlit==1.25.0
