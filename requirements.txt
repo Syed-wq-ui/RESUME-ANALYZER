@@ -10,7 +10,7 @@ langchain-text-splitters
 langchain-google-genai
 langchain-pinecone
 langgraph
-sentence-transformers
-torch
-pinecone
 typing-extensions
+sentence-transformers>=2.2.2
+torch>=2.0.0 --extra-index-url https://download.pytorch.org/whl/cpu
+pinecone
